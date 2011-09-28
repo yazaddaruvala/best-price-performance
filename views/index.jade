@@ -1,0 +1,24 @@
+!!!
+html
+ head
+  title BCL Best Purchase
+ body
+  #query
+   form(method="GET", action="/")
+    select(name="filterQuery")
+     - if (lastQuery == 'All')
+      option(selected="selected") All
+     - else
+      option All
+     - each type in typeList
+      - if (lastQuery == type)
+       option(selected="selected")= type
+      - else
+       option= type
+    input(type="submit", value="Filter")
+  #main(align="left, width="600px")
+   #more(align="right")
+    a(href="/?#{nextPage}") More Results
+   != partial('item.jade', {collection: list_from_database, as: 'item'});
+   #more(align="right")
+    a(href="/?#{nextPage}") More Results
