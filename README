@@ -1,3 +1,1 @@
-This project began in an attempt to familiarize myself with Redis. It worked just fine for the initial phase of my project but I have now decided I like the project and want to continue. Now that I want to begin making comparisons and filtering my database's output, (ie LRANGE 'alcohol' 0 20).where('type', 'beer'), Redis isn't the most efficient way of going about it.
-
-Since I have done all I can with Redis I am looking to find another fun database to learn, which will alow me to efficiently continue to expand my app by filtering of my outputs.
+This project began in an attempt to familiarize myself with Redis.
